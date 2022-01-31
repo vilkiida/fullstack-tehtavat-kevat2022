@@ -50,15 +50,12 @@ const App = () => {
 
   const handleGoodClick = () => {
     setGood(good + 1)
-    console.log("good")
   }
   const handleNeutralClick = () => {
     setNeutral(neutral + 1)
-    console.log("neutral")
   }
   const handleBadClick = () => {
     setBad(bad + 1)
-    console.log("bad")
   }
   return (
     <div>

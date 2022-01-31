@@ -20,3 +20,4 @@
 - tehtävä 1.9
 - tehtävä 1.10
 - tehtävä 1.11
+- tehtävä 1.12
