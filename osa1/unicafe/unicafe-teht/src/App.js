@@ -15,7 +15,10 @@ const Button = ({handleClick, text}) => {
 
 const StatisticLine = ({text, value}) => {
   return(
-    <p>{text} {value}</p>
+  <tr>
+    <td>{text}</td>
+    <td>{value}</td>
+  </tr>
   )
 }
 const Statistics = ({good, neutral, bad, all, average, positive}) => {
@@ -25,14 +28,14 @@ const Statistics = ({good, neutral, bad, all, average, positive}) => {
     )
   }
   return(
-  <div>
+  <table>
     <StatisticLine text="good" value={good} />
     <StatisticLine text="neutral" value={neutral} />
     <StatisticLine text="bad" value={bad} />
     <StatisticLine text="all" value={all} />
     <StatisticLine text="average" value={average} />
     <StatisticLine text="positive" value={positive} />
-  </div>
+  </table>
   )
 }
 const App = () => {
