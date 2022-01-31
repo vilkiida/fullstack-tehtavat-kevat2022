@@ -8,6 +8,9 @@ const Button = ({handleClick, text}) => {
 }
 
 const App = () => {
+  const getRandomInt = (max) => {
+    return Math.floor(Math.random() *max)
+  }
   const anecdotes = [
     'If it hurts, do it more often.',
     'Adding manpower to a late software project makes it later!',
@@ -17,15 +20,22 @@ const App = () => {
     'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
     'Programming without an extremely heavy use of console.log is same as if a doctor would refuse to use x-rays or blood tests when dianosing patients.'
   ]
-   
+  const [votes, setVotes] = useState([0, 0, 0, 0, 0, 0, 0])
   const [selected, setSelected] = useState(0)
   const handleButtonClick = () => {
-    setSelected(selected + 1)
+    setSelected(getRandomInt(6))
+  }
+  const handleVoteClick = () => {
+    const newVote = [...votes]
+    newVote[selected] += 1
+    setVotes(newVote)
   }
 
   return (
     <div>
       <p>{anecdotes[selected]}</p>
+      <p> has {votes[selected]} votes</p>
+      <Button handleClick={handleVoteClick} text="vote" />
       <Button handleClick={handleButtonClick} text="next anecdote" />
     </div>
   )

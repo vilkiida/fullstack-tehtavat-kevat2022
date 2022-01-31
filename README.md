@@ -21,3 +21,4 @@
 - tehtävä 1.10
 - tehtävä 1.11
 - tehtävä 1.12
+- tehtävä 1.13
