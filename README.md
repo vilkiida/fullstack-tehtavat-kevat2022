@@ -11,4 +11,4 @@
 ### Osa 1:
 - tehtävä 1.1
 - tehtävä 1.2
-
+- tehtävä 1.3
