@@ -15,3 +15,4 @@
 - tehtävä 1.4
 - tehtävä 1.5
 - tehtävä 1.6
+- tehtävä 1.7
