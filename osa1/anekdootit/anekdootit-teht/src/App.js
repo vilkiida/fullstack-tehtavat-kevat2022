@@ -23,6 +23,10 @@ const App = () => {
   const [votes, setVotes] = useState([0, 0, 0, 0, 0, 0, 0])
   const [selected, setSelected] = useState(0)
   const handleButtonClick = () => {
+    const newValue = getRandomInt(6)
+    if (newValue === selected) {
+      handleButtonClick()
+    }
     setSelected(getRandomInt(6))
   }
   const handleVoteClick = () => {
