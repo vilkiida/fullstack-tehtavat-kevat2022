@@ -1,4 +1,11 @@
 import { useState } from 'react'
+const Header = ({text}) => {
+  return(
+    <h1>
+      {text}
+    </h1>
+  )
+}
 const Button = ({handleClick, text}) => {
   return (
     <button onClick={handleClick}>
@@ -24,23 +31,24 @@ const App = () => {
   const [selected, setSelected] = useState(0)
   const handleButtonClick = () => {
     const newValue = getRandomInt(6)
-    if (newValue === selected) {
+    if (newValue == selected) {
       handleButtonClick()
     }
-    setSelected(getRandomInt(6))
+    setSelected(newValue)
   }
   const handleVoteClick = () => {
     const newVote = [...votes]
     newVote[selected] += 1
     setVotes(newVote)
   }
-
   return (
     <div>
+      <Header text="Anecdote of the day" />
       <p>{anecdotes[selected]}</p>
       <p> has {votes[selected]} votes</p>
       <Button handleClick={handleVoteClick} text="vote" />
       <Button handleClick={handleButtonClick} text="next anecdote" />
+      <Header text="Anecdote with most votes" />
     </div>
   )
 }
