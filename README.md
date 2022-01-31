@@ -14,4 +14,4 @@
 - tehtävä 1.3
 - tehtävä 1.4
 - tehtävä 1.5
-
+- tehtävä 1.6
