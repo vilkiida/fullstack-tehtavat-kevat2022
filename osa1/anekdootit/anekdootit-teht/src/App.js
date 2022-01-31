@@ -41,6 +41,7 @@ const App = () => {
     newVote[selected] += 1
     setVotes(newVote)
   }
+  const mostVoted = Math.max(...votes)
   return (
     <div>
       <Header text="Anecdote of the day" />
@@ -49,6 +50,7 @@ const App = () => {
       <Button handleClick={handleVoteClick} text="vote" />
       <Button handleClick={handleButtonClick} text="next anecdote" />
       <Header text="Anecdote with most votes" />
+      <p>has {mostVoted} votes</p>
     </div>
   )
 }
