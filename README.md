@@ -22,3 +22,5 @@
 - tehtävä 1.11
 - tehtävä 1.12
 - tehtävä 1.13
+
+(tehtävä 1.14 jäi kesken)
