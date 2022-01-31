@@ -17,3 +17,5 @@
 - tehtävä 1.6
 - tehtävä 1.7
 - tehtävä 1.8
+- tehtävä 1.9
+
