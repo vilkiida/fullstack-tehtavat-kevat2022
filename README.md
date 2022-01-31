@@ -12,3 +12,4 @@
 - tehtävä 1.1
 - tehtävä 1.2
 - tehtävä 1.3
+- tehtävä 1.4
