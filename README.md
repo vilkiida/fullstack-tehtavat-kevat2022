@@ -33,3 +33,4 @@
 - tehtävä 2.5
 - tehtävä 2.6
 - tehtävä 2.7
+- tehtävä 2.8
