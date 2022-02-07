@@ -24,13 +24,15 @@ const Content = ({parts}) => {
 }
 
 const Total = ({parts}) => {
-  const total = parts[0].exercises + parts[1].exercises + parts[2].exercises
-  return(
-    <div>
-      <b>total of {total} exercises</b>
-    </div>
-  )
-}
+  const total = parts.reduce((s, p) => {
+    return s + p.exercises
+      }, 0)
+    return(
+      <div>
+        <b>total of {total} exercises</b>
+      </div>
+    )
+  }
 const Course = ({course}) => {
   return(
     <div>
