@@ -29,3 +29,4 @@
 - tehtävä 2.1
 - tehtävä 2.2
 - tehtävä 2.3
+- tehtävä 2.4

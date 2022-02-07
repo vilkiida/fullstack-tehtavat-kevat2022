@@ -14,8 +14,7 @@ const Part = ({part, exercises}) => {
   )
 }
 const Content = ({parts}) => {
-  const contents = parts.map(x => <p key={x.id}><Part part={x.name} exercises={x.exercises} /></p> )
-  console.log(contents)
+  const contents = parts.map(x => <div key={x.id}><Part part={x.name} exercises={x.exercises} /></div> )
   return(
     <div>
       {contents}
@@ -43,31 +42,55 @@ const Course = ({course}) => {
 }
 
 const App = () => {
-  const course = {
-    name: 'Half Stack application development',
-    id: 1,
-    parts: [
-      {
-        name: 'Fundamentals of React',
-        exercises: 10,
-        id: 1
-      },
-      {
-        name: 'Using props to pass data',
-        exercises: 7,
-        id: 2
-      },
-      {
-        name: 'State of a component',
-        exercises: 14,
-        id: 3
-      }
-    ]
-  }
+  const courses = [
+    {
+      name: 'Half Stack application development',
+      id: 1,
+      parts: [
+        {
+          name: 'Fundamentals of React',
+          exercises: 10,
+          id: 1
+        },
+        {
+          name: 'Using props to pass data',
+          exercises: 7,
+          id: 2
+        },
+        {
+          name: 'State of a component',
+          exercises: 14,
+          id: 3
+        },
+        {
+          name: 'Redux',
+          exercises: 11,
+          id: 4
+        }
+      ]
+    }, 
+    {
+      name: 'Node.js',
+      id: 2,
+      parts: [
+        {
+          name: 'Routing',
+          exercises: 3,
+          id: 1
+        },
+        {
+          name: 'Middlewares',
+          exercises: 7,
+          id: 2
+        }
+      ]
+    }
+  ]
+  const all = courses.map(x => <div key={x.id}> <Course course={x} /></div>)
 
   return (
     <div>
-      <Course course={course} />
+      {all}
     </div>
   )
 }
