@@ -14,14 +14,13 @@ const Part = ({part, exercises}) => {
   )
 }
 const Content = ({parts}) => {
+  const contents = parts.map(x => <p key={x.id}><Part part={x.name} exercises={x.exercises} /></p> )
+  console.log(contents)
   return(
     <div>
-      <Part part={parts[0].name} exercises={parts[0].exercises} />
-      <Part part={parts[1].name} exercises={parts[1].exercises} />
-      <Part part={parts[2].name} exercises={parts[2].exercises} />
+      {contents}
     </div>
-  )
-}
+  )}
 
 const Total = ({parts}) => {
   const total = parts.reduce((s, p) => {
@@ -36,7 +35,7 @@ const Total = ({parts}) => {
 const Course = ({course}) => {
   return(
     <div>
-      <Header course={course.name} />
+      <Header name={course.name} />
       <Content parts={course.parts} />
       <Total parts={course.parts} />
     </div>
