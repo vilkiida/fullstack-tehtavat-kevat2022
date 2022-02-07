@@ -24,3 +24,6 @@
 - tehtävä 1.13
 
 (tehtävä 1.14 jäi kesken)
+
+## Osa 2:
+- tehtävä 2.1
