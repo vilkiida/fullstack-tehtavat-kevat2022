@@ -23,10 +23,10 @@ const PersonForm = ({addName, newName, handleNameChange, newNumber, handleNumber
           </form>
   )}
 
-const Persons = ({personsToShow}) => {
+const Persons = ({personsToShow, handleErasing}) => {
   return(
     <div>
-      {personsToShow.map(person => <div key={person.name}><Contact name={person.name} number={person.number} /></div>)}
+      {personsToShow.map(person => <div key={person.name}><Contact name={person.name} number={person.number} /><button onClick={handleErasing} id={person}>Delete</button></div>)}
     </div>
   )}
 const Contact = ({name, number}) => {
@@ -84,6 +84,13 @@ const App = () => {
     setNewFilter(event.target.value)
     setShowAll(false)
   }
+  const handleErasing = (event, id) => {
+    axios
+      .delete('https://localhost:3001/persons', {id})
+      .then(response => {
+        setPersons(persons.concat(response.data))
+      })
+  }
   
   return (
     <div>
@@ -98,7 +105,7 @@ const App = () => {
       
       <h2>Numbers</h2>
         <div>
-          <Persons personsToShow={personsToShow} />
+          <Persons personsToShow={personsToShow} handleErasing={handleErasing} />
         </div>
     </div>
   )

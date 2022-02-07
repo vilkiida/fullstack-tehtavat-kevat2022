@@ -37,6 +37,10 @@
 - tehtävä 2.9
 - tehtävä 2.10
 - tehtävä 2.11
+
 (tehtävät 2.12, 2.13 ja 2.14 puuttuu (2.12 aloitettu))
+
 - tehtävä 2.15
 - tehtävä 2.16
+
+(loput puuttuu)
