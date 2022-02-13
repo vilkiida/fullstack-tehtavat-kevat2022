@@ -44,3 +44,6 @@
 - tehtävä 2.16
 
 (loput puuttuu)
+
+## Osa 3:
+- tehtävä 3.1
