@@ -50,3 +50,5 @@
 - tehtävä 3.2
 - tehtävä 3.3
 - tehtävä 3.4
+- tehtävä 3.5
+- tehtävä 3.6
