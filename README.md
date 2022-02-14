@@ -53,3 +53,4 @@
 - tehtävä 3.5
 - tehtävä 3.6
 - tehtävä 3.7
+- tehtävä 3.8
