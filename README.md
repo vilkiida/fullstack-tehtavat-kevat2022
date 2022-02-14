@@ -49,3 +49,4 @@
 - tehtävä 3.1
 - tehtävä 3.2
 - tehtävä 3.3
+- tehtävä 3.4
