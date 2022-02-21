@@ -61,3 +61,5 @@
 - tehtävä 4.3
 - tehtävä 4.4
 - tehtävä 4.8
+- tehtävä 4.9
+
