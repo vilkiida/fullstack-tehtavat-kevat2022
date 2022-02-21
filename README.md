@@ -54,3 +54,6 @@
 - tehtävä 3.6
 - tehtävä 3.7
 - tehtävä 3.8
+
+## Osa 4:
+- tehtävä 4.1
