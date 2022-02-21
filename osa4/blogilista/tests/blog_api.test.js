@@ -46,4 +46,24 @@ test('identifier called id', async () => {
     expect(response.body).toBeDefined()
 })
 
+test('a blog can be added', async () => {
+    const newBlog = {
+        _id: "5a422a851b54a676234d17f7",
+        title: "React patterns",
+        author: "Michael Chan",
+        url: "https://reactpatterns.com/",
+        likes: 7,
+        __v: 0
+    }
+
+
+    await api
+        .post('/api/blogs')
+        .send(newBlog)
+    
+    const response = await api.get('/api/blogs')
+
+    expect(response.body).toHaveLength(initialBlogs.length + 1)
+})
+
 

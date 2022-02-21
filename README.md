@@ -63,4 +63,4 @@
 - tehtävä 4.5
 - tehtävä 4.8
 - tehtävä 4.9
-
+- tehtävä 4.10
