@@ -57,3 +57,7 @@
 
 ## Osa 4:
 - tehtävä 4.1
+- tehtävä 4.2
+- tehtävä 4.3
+- tehtävä 4.4
+- tehtävä 4.8
